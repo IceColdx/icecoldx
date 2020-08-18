@@ -1,1 +1,1 @@
-# [Simple_CTF](./thm/simple_CTF.md)
+# [Simple_CTF](./thm/Simple_CTF.md)
