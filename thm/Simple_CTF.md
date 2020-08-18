@@ -6,7 +6,7 @@ Writeup for room - [Simple CTF](https://tryhackme.com/room/easyctf)
 
 ## Reconnaissance
 
-Let's start with a nmap scan.
+Let's start with an nmap scan.
 
 ```
 nmap <IP> -A -sC -T4
