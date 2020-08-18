@@ -9,7 +9,7 @@ Writeup for room - [Simple CTF](https://tryhackme.com/room/easyctf)
 Let's start with a nmap scan.
 
 ```
-nmap <MACHINE_IP -A -sC -T4>
+nmap <IP> -A -sC -T4
 ```
 
 ![Nmap Results](/thm/images/simple/nmap)
