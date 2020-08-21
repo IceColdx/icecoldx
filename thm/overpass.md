@@ -39,10 +39,31 @@ Perhaps we can give this cookie a random value and it will let us in?
 
 ![cookie](/thm/images/overpass/sessioncookie.png)
 
-Reload the page and find a private ssh key
+Reload the page and we find a private ssh key for user james.
+
 ![sshkey](/thm/images/overpass/sshkey.png)
 
 When we try to login with this private key we're asked for a passphrase so lets use john to crack it.
+First we convert with ssh2john.py and then we crack it with the rockyou wordlist.
 
+![john](/thm/images/overpass/john.png)
+
+We cracked the passphrase, now we try again.
+Don't forget to change the file permissions to 600 or ssh will complain.
+
+![ssh](/thm/images/overpass/ssh.png)
 
 ## Privilege escalation
+
+We're in! The user flag is the usual location and should be easy to find. Let's to try escalate our privilege.
+
+sudo -l does not give us anything.
+Maybe there's an interesting file with SUID permission?
+
+![suid](/thm/images/overpass/suid.png)
+
+Again nothing we can use.
+
+Let's check if we can exploit a cronjob.
+
+![cronjob](/thm/images/overpass/cronjobs.png)
