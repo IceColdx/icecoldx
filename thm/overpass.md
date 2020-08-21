@@ -68,7 +68,7 @@ Let's check if we can exploit a cronjob.
 
 ![cronjob](/thm/images/overpass/cronjobs.png)
 
-We can see there's a buildscript.sh run from overpass.thm/downloads/src. If we can edit /etc/hosts I can set overpass.thm to my IP and get root privilege with a reverse shell.
+We can see there's a buildscript.sh run from overpass.thm/downloads/src. If we can edit /etc/hosts we can set overpass.thm to our own IP and get root privilege with a reverse shell.
 
 First we edit /etc/hosts and put our own IP in.
 
