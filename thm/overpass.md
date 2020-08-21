@@ -1,6 +1,6 @@
 # Overpass Writeup
 
-![Nmap Results](/thm/images/simple/banner.png)
+![Nmap Results](/thm/images/overpass/banner.png)
 
 Writeup for room - [Overpass](https://tryhackme.com/room/overpass)
 
