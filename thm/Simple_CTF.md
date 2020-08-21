@@ -1,6 +1,6 @@
 # Simple CTF Writeup
 
-![Nmap Results](/thm/images/simple/banner.png)
+![banner](/thm/images/simple/banner.png)
 
 Writeup for room - [Simple CTF](https://tryhackme.com/room/easyctf)
 
@@ -13,7 +13,7 @@ Let's start with an nmap scan.
 nmap <IP> -sV -sC -T4 -p-
 ```
 
-![Nmap Results](/thm/images/simple/nmap)
+![nmap result](/thm/images/simple/nmap)
 
 ## Gaining Access
 
