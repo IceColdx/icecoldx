@@ -13,7 +13,7 @@ Let's start with an nmap scan.
 nmap <IP> -sV -sC -T4 -p-
 ```
 
-![nmap result](/thm/images/simple/nmap)
+![nmap result](/thm/images/simple/nmap.png)
 
 ## Gaining Access
 
