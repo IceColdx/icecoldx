@@ -1,4 +1,4 @@
-# Overpass Writeup
+# Bounty Hacker Writeup
 
 ![bannner](/thm/images/bounty_hacker/banner.jpeg)
 
@@ -19,7 +19,7 @@ We find 3 open ports, it seems anonymous login is enabled on FTP port 21 so let'
 ![ftp](/thm/images/bounty_hacker/ftp.png)
 
 tasks.txt contains the name we should use for ssh and in our attack.
-I'd say there are about 20 passwords in lock.txt, we could try to do that manually but what's the fun in that? HYDRA!
+I'd say there are about 20 passwords in lock.txt. We could try to do that manually but what's the fun in that? HYDRA!
 
 ![hydra](/thm/images/bounty_hacker/hydra.png)
 
