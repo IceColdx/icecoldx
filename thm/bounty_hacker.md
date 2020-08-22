@@ -1,6 +1,6 @@
 # Overpass Writeup
 
-![bannner](/thm/images/bounty_hacker/banner.png)
+![bannner](/thm/images/bounty_hacker/banner.jpeg)
 
 Writeup for room - [Bounty Hacker](https://tryhackme.com/room/cowboyhacker)
 
@@ -23,7 +23,7 @@ I'd say there are about 20 passwords in lock.txt, we could try to do that manual
 
 ![hydra](/thm/images/bounty_hacker/hydra.png)
 
-Let's try sudo -l.
+Let's try sudo -l
 
 ![sudo](/thm/images/bounty_hacker/sudo.png)
 
