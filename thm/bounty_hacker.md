@@ -27,7 +27,7 @@ I'd say there are about 20 passwords in lock.txt. We could try to do that manual
 
 ## Privilege escalation
 
-Let's try sudo -l
+Let's try sudo -l to see what our sudo permissions are with user lin.
 
 ![sudo](/thm/images/bounty_hacker/sudo.png)
 
