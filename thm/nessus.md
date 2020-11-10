@@ -2,7 +2,7 @@
 
 ![bannner](/thm/images/nessus/logo.png)
 
-Writeup for room - [Nessus](https://tryhackme.com/room/cowboyhacker)
+Writeup for room - [Nessus](https://tryhackme.com/room/rpnessus)
 
 ## Task 2 - Installation
 
@@ -34,6 +34,7 @@ After having set all the correct settings, we can launch the scan (this will pro
 
 ![#5](/thm/images/nessus/results.png)
 
+![#6](/thm/images/nessus/results.png)
 
 ## Task 5 - Mail
 
